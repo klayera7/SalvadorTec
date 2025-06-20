@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 @import url('https: //fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -8,6 +12,7 @@
 
 body {
     background: #000;
+    padding-top: 100px;
 }
 
 /* Cabeçalho do site */
@@ -17,11 +22,18 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 100px;
-    border-bottom: 1px solid #007bff28;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: #000; 
+    z-index: 1000; 
+    border-bottom: 1px solid #007bff56;
 }
 
-img {
+#logo {
     width:400px;
+    margin-left: 40px;
 }
 
 nav {
@@ -37,7 +49,7 @@ a {
     border: 0;
     outline: none;
     background: none;
-    color: rgb(155, 155, 155);
+    color: #ffffffbb;
     text-transform: uppercase;
     letter-spacing: 8px;
     font-weight: 800;
@@ -65,3 +77,103 @@ a:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px #007BFF);
 } 
+
+/* Hero da pagina */
+
+#hero {
+    height: 90vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%),
+    url('../img/hero.jpg') no-repeat center center/cover;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 1000px; 
+    padding: 20px;
+    z-index: 2; 
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 60px;
+    height: 100%;
+}
+
+#hero h1 {
+    font-size: 4.6rem; 
+    margin-bottom: 20px;
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffffd2; 
+}
+
+.event-info {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: white;
+}
+
+#heroimg {
+    cursor: pointer;
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #007bff3f;
+    transition: 0.4s ease-in-out;
+}
+
+#heroimg:hover {
+    width: 800px;
+    max-width: 100%;
+    transform: translateY(-4px);
+}
+
+/* Atrações */
+
+#participantes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    height: 70vh;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.cards {
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    justify-items: center;
+    border: 1px solid rgb(58, 53, 53);
+    box-shadow: 0px 0px 2px #007bff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.participantesImg {
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 16px;
+    box-shadow: 0px 0px 8px #007bff7c;
+}
+
+.participantesNome {
+    color: white;
+    margin-top: 10px;
+}
+
+.participantesInfo {
+    color: #ffffff80;
+    margin-top: 12px;
+}

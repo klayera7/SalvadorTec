@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 @import url('https: //fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-    background: #000;
+    background: #0a0a0a;
     padding-top: 100px;
 }
 
@@ -176,4 +177,73 @@ a:hover .hover-text {
 .participantesInfo {
     color: #ffffff80;
     margin-top: 12px;
+}
+
+/* Inscrições */
+
+#inscricao {
+    justify-self: center;
+    width: 1000px;
+    height: auto;
+    background-color: #ffffffd0;
+    border: none;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 200px;
+    box-shadow: 1px 1px 8px #007BFF;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 16px;
+}
+
+.topicos {
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+#lista {
+    margin-left: 20px;
+    
+}
+
+.atividades {
+    font-size: 1.2rem;
+    color: #000000ee;
+}
+
+#enviar {
+    padding: 16px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    width: 300px;
+    color: #007BFFcc;
+    background-color: #141414;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+#enviar:hover {
+    transform: translateY(-6px);
+    background-color: #ffffffcc;
+    color: #007BFF;
+    box-shadow: 2px 2px 12px #007BFF;
+}
+
+#container-enviar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#rodape {
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    color: #ffffffcc;
 }

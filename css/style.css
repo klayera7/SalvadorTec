@@ -248,7 +248,7 @@ a:hover .hover-text {
     color: #ffffffcc;
 }
 
-/* Animação */
+/* Animação hero */
 
 .fadeInDown {
     transform: translate3d(0, -20px, 0);
@@ -271,4 +271,29 @@ a:hover .hover-text {
     opacity: 1;
     transform: none;
     transition: transform 0.8s, opacity 0.8s;
+}
+
+/* Animação cards */
+
+[data-card] {
+    opacity: 0;
+    transform: translate3d(0 ,50px, 0); 
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+[data-card].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-card][data-delay="0.4s"].animate {
+    transition-delay: 0.4s;
+}
+
+[data-card][data-delay="0.8s"].animate {
+    transition-delay: 0.8s;
+}
+
+[data-card][data-delay="1.2s"].animate {
+    transition-delay: 1.2s;
 }
